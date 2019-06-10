@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- Moment.js v2.20.0 -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.0/moment.min.js"></script>
+  <!-- FullCalendar v3.8.1 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.1/fullcalendar.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.1/fullcalendar.print.css" rel="stylesheet" media="print">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.1/fullcalendar.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>calendar</title>
+      <style>
+      .navbar{background-color:black!important;}
+      </style>
+      <script src="js/calendar.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navebarcollapse">
+<span class="navbar-toggler-icon"></span>            
+    </button>
+         <div class="collapse navbar-collapse "id="navebarcollapse">
+        <a href="index.html" class="navbar-brand">chaoxtabletennis.xyz</a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="carouselnew.html" class="nav-link">Players</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="event.html" class="nav-link">Event</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="skills.html" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="game.html" target="_blank" class="nav-link">Game</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+      <div id="example" style="position:absolute;margin-top:50px"></div>
+  <script>
+  	$( "#example" ).fullCalendar({
+        height : window.innerHeight-20,  
+    windowResize: function(view) {  
+        $("#example").fullCalendar('option', 'height', window.innerHeight-20);  
+    },  
+  		// 參數設定[註1]
+  		header: { // 頂部排版
+  			left: "prev,next today", // 左邊放置上一頁、下一頁和今天
+  			center: "title", // 中間放置標題
+  			right: "month,basicWeek,basicDay" // 右邊放置月、周、天
+  		},
+        height:680,
+  		defaultDate: "2019-04-21", // 起始日期
+  		weekends: true, // 顯示星期六跟星期日
+  		editable: false,  // 不啟動拖曳調整日期
+  		events: [ // 事件
+  			{ // 事件
+  				title: "World Table Tennis Championships, Budapest (HUN)",
+  				start: "2019-04-21",
+                end: "2019-04-28",
+                textColor:"#FFECB3 "
+  			},
+            { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Hungarian Open, Budapest (HUN)",
+  				start: "2019-01-15",
+                end: "2019-01-20",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Platinum Qatar Open, Doha (QAT)",
+  				start: "2019-03-26",
+                end: "2019-03-31",
+                textColor:"#FFECB3"
+  			},
+             { // 事件
+  				title: " Universal ITTF Pan American Cup, Guaynabo (PUR)",
+  				start: "2019-02-01",
+                end: "2019-02-03",
+                textColor:"#FFECB3"
+  			},
+             { // 事件
+  				title: "LION 32nd ITTF-ATTU Asian Cup, Yokohama (JPN)",
+  				start: "2019-04-05",
+                end: "2019-04-07",
+                textColor:"#FFECB3"
+  			},
+             { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Platinum China Open, Shenzhen (CHN)",
+  				start: "2019-05-28",
+                end: "2019-06-02",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Hang Seng Hong Kong Open, Hong Kong (HKG)",
+  				start: "2019-06-04",
+                end: "2019-06-09",
+                textColor:"#FFECB3"
+  			},
+             { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Platinum LION Japan Open, Sapporo (JPN)",
+  				start: "2019-06-12",
+                end: "2019-06-16",
+                textColor:"#FFECB3"
+  			},
+             { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Korea Open, Busan (KOR)",
+  				start: "2019-07-02",
+                end: "2019-07-07",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " ITTF European Championships, Nantes (FRA)",
+  				start: "2019-09-03",
+                end: "2019-09-08",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " ITTF-ATTU Asian Table Tennis Championships, Yogyakarta (INA)",
+  				start: "2019-09-15",
+                end: "2019-09-22",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " T2 Diamond, Haikou (CHN)",
+  				start: "2019-09-26",
+                end: "2019-09-29",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Swedish Open, Stockholm (SWE)",
+  				start: "2019-10-01",
+                end: "2019-10-06",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Platinum German Open, Bremen (GER)",
+  				start: "2019-10-08",
+                end: "2019-10-13",
+                textColor:"#FFECB3"
+  			},
+            { // 事件
+  				title: " ITTF Team World Cup, Tokyo (JPN)",
+  				start: "2019-11-06",
+                end: "2019-11-10",
+                textColor:"#FFECB3"
+  			},
+             { // 事件
+  				title: " ITTF Men’s World Cup, Chengdu (CHN)",
+  				start: "2019-11-26",
+                end: "2019-12-1",
+                textColor:"#FFECB3"
+  			},
+             { // 事件
+  				title: " Seamaster 2019 ITTF World Tour Grand Finals, TBD",
+  				start: "2019-12-12",
+                end: "2019-12-15",
+                textColor:"#FFECB3"
+  			},
+  			
+  		]
+  	});
+  </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

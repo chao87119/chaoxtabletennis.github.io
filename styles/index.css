@@ -1,0 +1,13 @@
+* {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            html, body,img {
+                height: 80%;
+                font-family: 'Lora', serif;
+                background-color: black
+            }
+            .container { margin:100px auto; text-align:center;}
