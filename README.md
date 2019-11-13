@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/chao87119/chaoxtabletennis.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chao87119/chaoxtabletennis.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ # NTPU 2019 
+ 
+ Introduction to web programming
+ Final project
+ 
+網址：https://chaoxtabletennis.xyz
+設計理念：因為本身對桌球很熱愛，所以想設計一個屬於自己介紹桌球的網站。
+               網站內容包含：
+               1.自動轉跳的首頁
+               2.球員介紹自動輪播頁面：這裡選了10個自己認為比較有代表性的球員，並有影片連結
+               3.賽事介紹頁面：這裡選了四月剛結束的大賽-世界桌球錦標賽來進行介紹，並有googlemap標示比賽場館
+               4.行事曆頁面：默認日期為世桌賽開始那天，內容包含今年度所有重要賽事的日期
+               5.技術欣賞頁面：介紹了五個自己認為比較基礎或特別值得一提的技術，使用嵌入youtube iframe的方式呈現
+               6.遊戲頁面：一個乒乓球對打遊戲
+      備註：
+               1.遊戲頁面為引用他人設計，非我所創
+               2.點導航欄中的chaoxtabletennis.xyz或最底部chaoxtabletennis的icon可回到轉跳首頁
+               3.行事曆引用自Full Calendar，之後再修改其中內容，非我原創
+               4.網站大抵使用bootstrap建構而成，除了轉跳首頁及Game之外
+               5.網域名稱購自namecheap
+               6.作品放置在github上
